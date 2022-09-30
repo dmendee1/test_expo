@@ -88,8 +88,8 @@ class App extends React.Component {
         <div className={styles.main}>
           <div className={styles.maindev}>
             {/* {this.state.failure === true ? renderAlarm(config.newyear.failed) : ""} */}
-            {/* <center><h3 className={styles.headerclassdesc}><i className={styles.name}>Та одоогоор 10 мод аварсан байна.</i></h3></center> */}
-            {this.state.isLoading === true ? <LottieControl width="400px" height="400px" animationData={loadingLottie} /> : ""}
+            <center><h3 className={styles.headerclassdesc}><i className={styles.name}>Та одоогоор 10 мод аварсан байна.</i></h3></center>
+            {this.state.isLoading === true ? <LottieControl width="300px" height="300px" animationData={loadingLottie} /> : ""}
             <div className={styles.rewardicon}>
               {this.state.isLoading === false ? this.getReward(this.state.bigReward, this.state.isdn, this.state.userid, this.state.rewardId, this.state.rewardDto, this.addRewardIdAndRewardDto) : ""}
             </div>
