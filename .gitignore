@@ -31,8 +31,5 @@ yarn-error.log*
 .env.production.local
 
 
-client/config
-/package.json
-
 # vercel
 .vercel
