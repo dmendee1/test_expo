@@ -1,0 +1,6 @@
+.main {
+    height: 50px;
+    width: 50px;
+    background-image: url("../public/marker.png");
+    background-size: cover;
+}
