@@ -10,8 +10,8 @@
         }
     },
     "wallet": {
-        "host": "10.12.11.10",
-        "port": "8080",
+        "host": "z-wallet.candy.mn",
+        "port": "443",
         "authorization": "ZGV2ZWxvcGVyOlBhc3N3b3JkMQ==",
         "api": {
             "userLandmap": "/wallet-rest/rest/admin/expo/landmap",

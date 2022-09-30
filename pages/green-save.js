@@ -33,7 +33,7 @@ class App extends React.Component {
       failure: false,
       token: props.query.code,
       action: props.query.action,
-      username: '',
+      username: 'Tomnoo',
       isdn: '',
       userid: '',
       rewardDto: null,
@@ -77,75 +77,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    var headConfig = {
-      headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET' },
-    };
-
-    axios.get("/api/miniapp/getUserInfo?token=" + this.state.token, headConfig).then(result => {
-      console.log(result);
-      if (result.data != null && result.data.intCode !== 0) {
-        this.setState({
-          failure: false,
-          isLoading: true,
-        })
-      } else {
-        let responseData = result.data;
-        console.log(responseData.result);
-        if (responseData.code === "UNAUTHORIZED") {
-          this.setState({
-            failure: true,
-            isLoading: false,
-          })
-        } else {
-          this.setState({
-            username: responseData.result.userFirstname,
-            isdn: responseData.result.userPhone,
-            userid: responseData.result.userId
-          });
-
-          var headConfig = {
-            headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET' },
-          };
-
-          let data = {
-            id: responseData.result.userId,
-            phone: responseData.result.userPhone,
-            action: this.state.action != null && this.state.action != undefined ? this.state.action : ""
-          }
-
-          axios.post("/api/wallet/getUserInfo", data, headConfig).then(result => {
-            console.log(result);
-            let resData = result.data;
-            if (resData == null || resData === "") {
-              this.setState({
-                failure: true,
-                isLoading: false,
-              })
-            } else {
-              console.log(resData.bigReward);
-              this.setState({
-                bigReward: resData.bigReward,
-                today: resData.todayDay,
-                isMobicomEmployee: resData.isMobicomEmployee
-              });
-              if (this.state.bigReward != null && this.state.bigReward === "REWARDED") {
-                this.setState({
-                  rewardId: resData.rewardId,
-                  rewardDto: resData.rewardDto
-                });
-              }
-              setTimeout(() => {
-                this.setState({
-                  isLoading: false,
-                })
-              }, 2000);
-            }
-          })
-        }
-      }
-    }).catch(function (err) {
-      renderAlarm("Amjiltgui bolloo");
-    })
   }
 
   
@@ -156,7 +87,7 @@ class App extends React.Component {
         <Image src={Garchig} width="200%" height="100%" />
         <div className={styles.main}>
           <div className={styles.maindev}>
-            {this.state.failure === true ? renderAlarm(config.newyear.failed) : ""}
+            {/* {this.state.failure === true ? renderAlarm(config.newyear.failed) : ""} */}
             <center><h3 className={styles.headerclassdesc}><i className={styles.name}>Та одоогоор 10 мод аварсан байна.</i></h3></center>
             {this.state.isLoading === true ? <LottieControl width="400px" height="400px" animationData={loadingLottie} /> : ""}
             <div className={styles.rewardicon}>

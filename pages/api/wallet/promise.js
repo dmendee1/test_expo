@@ -1,5 +1,5 @@
 const config = require("../../../config/config.json");
-const http = require("http");
+const http = require("https");
 const querystring = require("query-string");
 
 promiseGetUserLandmap = (path, data) => {
