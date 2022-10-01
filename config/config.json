@@ -5,18 +5,18 @@
         "grantType": "authorization_code",
         "redirectUrl": "1234",
         "api": {
-            "accessToken": "/wallet-miniapp/oauth/token",
-            "getUserInfo": "/wallet-miniapp/api/oauth/userinfo"
+            "accessToken": "/v2/oauth/token",
+            "getUserInfo": "/v2/api/oauth/userinfo"
         }
     },
     "wallet": {
-        "host": "z-wallet.candy.mn",
+        "host": "wallet.candy.mn",
         "port": "443",
         "authorization": "ZGV2ZWxvcGVyOlBhc3N3b3JkMQ==",
         "api": {
-            "userLandmap": "/wallet-rest/rest/admin/expo/landmap",
-            "bigreward": "/wallet-rest/rest/admin/expo/landmap/bigreward",
-            "getRewards": "/wallet-rest/rest/admin/expo/landmap/rewards"
+            "userLandmap": "/rest/admin/expo/landmap",
+            "bigreward": "/rest/admin/expo/landmap/bigreward",
+            "getRewards": "/rest/admin/expo/landmap/rewards"
         }
     },
     "expo": {
