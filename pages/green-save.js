@@ -148,17 +148,17 @@ class App extends React.Component {
     })
   }
 
-  
+
   render() {
     return (
       <div className={styles.container}>
-        <h3 className={styles.headerclass}><i className={styles.name}>Тавтай морил: {getUsername(this.state)}</i> <span className={styles.info}><Modal icon={Info} open={true} description={config.newyear.instruction_green} action="instruction" name=" " buttonText="Хаах" width="50%" height="50%" /></span></h3>
+        <h3 className={styles.headerclass}><i className={styles.name}>Тавтай морил: {getUsername(this.state)}</i> <span className={styles.info}><Modal icon={Info} open={true} description={config.newyear.instruction_green} action="instruction" name="Ногоон зээл" buttonText="Хаах" width="50%" height="50%" /></span></h3>
         {/* <Image src={Garchig} width="200%" height="100%" /> */}
         <div className={styles.main}>
           <div className={styles.maindev}>
             {/* {this.state.failure === true ? renderAlarm(config.newyear.failed) : ""} */}
-            <center><h3 className={styles.headerclassdesc}><i className={styles.name}>Та одоогоор 10 мод аварсан байна.</i></h3></center>
-            {this.state.isLoading === true ? <LottieControl width="400px" height="400px" animationData={loadingLottie} /> : ""}
+            <center><h3 className={styles.headerclassdesc}><i className={styles.name}>Энэ бол ТАНЫ мод!</i></h3></center>
+            <LottieControl width="400px" height="400px" animationData={loadingLottie} />
             <div className={styles.rewardicon}>
               {this.state.isLoading === false ? this.getReward(this.state.bigReward, this.state.isdn, this.state.userid, this.state.rewardId, this.state.rewardDto, this.addRewardIdAndRewardDto) : ""}
             </div>
