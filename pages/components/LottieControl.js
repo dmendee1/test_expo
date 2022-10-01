@@ -16,6 +16,7 @@ export default class LottieControl extends React.Component {
   render() { 
     const defaultOptions = {
       isClickToPauseDisabled: true,
+      loop: true,
       animationData: this.state.animationData,
     };
  
