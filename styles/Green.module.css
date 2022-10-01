@@ -3,7 +3,7 @@
   display: flex;
   background-image: url("../public/background-green.jpg");
   background-size: cover;
-  flex-direction: column; 
+  flex-direction: column;
   /* justify-content: center; */
   align-items: center;
   width: 100%;
@@ -11,145 +11,153 @@
   background-size: cover;
   overflow-y: auto hidden;
   z-index: 1;
-  }
-  
-  .headerclass {
-    /* color: #fff; */
-    padding: 0em 1em;
-    width: 100%;
-    border-bottom: solid #fff;
-  }
-
-  .headerclassdesc {
-    color: #fff;
-    padding: 0em 1em;
-    width: 100%;
-    font-family: "Roboto rev=2";
-  }
-  
-  .name {
-    text-align: right;
-    justify-content: right;
-    color: #fff;
-  }
-  
-  .main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .maindev {
-    padding: 1em 2em;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-  }
-  
-  .marker {
-    /* transform: translateX(200px); */
-    background: #0f0;
-    width: 20%;
-    padding: 1em 2em;
-  }
-
-  .calendar {
-      margin: 0 auto;
-  }
-
-  .calendarrow {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .calendarcolumn {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .calendaritem {
-    color: #fff;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .calendarcomplete {
-    color: #fff;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .activeDay {
-    color: #fff;
-    border-radius: 50%;
-    border: 1px solid;
-    transform: scale(1.0);
-  }
-  .calendaractive {
-    display: flex;
-    background-color: #f0f;
-    text-align: center;
-    justify-content: center;
-    padding: 0.2;
-    align-items: center;
-  }
-  .calendarinactive {
-    color: #fff;
-    opacity: 0.4;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 0.2;
-    align-items: center;
 }
 
-  .rewardicon {
-      flex: 1;
-      margin: 0 auto;
-      /* background-color: #000; */
-      align-content: center;
+.player {
+  transform: translateY(1000px);
+}
+
+.headerclass {
+  /* color: #fff; */
+  padding: 0em 1em;
+  width: 100%;
+  border-bottom: solid #fff;
+}
+
+.headerclassdesc {
+  color: #fff;
+  padding: 0em 1em;
+  width: 100%;
+  font-family: "Roboto rev=2";
+}
+
+.name {
+  text-align: right;
+  justify-content: right;
+  color: #fff;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maindev {
+  padding: 1em 2em;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.marker {
+  /* transform: translateX(200px); */
+  background: #0f0;
+  width: 20%;
+  padding: 1em 2em;
+}
+
+.calendar {
+  margin: 0 auto;
+}
+
+.calendarrow {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+.calendarcolumn {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+.calendaritem {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendarcomplete {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeDay {
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid;
+  transform: scale(1.0);
+}
+
+.calendaractive {
+  display: flex;
+  background-color: #f0f;
+  text-align: center;
+  justify-content: center;
+  padding: 0.2;
+  align-items: center;
+}
+
+.calendarinactive {
+  color: #fff;
+  opacity: 0.4;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0.2;
+  align-items: center;
+}
+
+.rewardicon {
+  flex: 1;
+  margin: 0 auto;
+  /* background-color: #000; */
+  align-content: center;
+}
+
+.footer {
+  width: 50%;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 1.7%;
+  right: 3%;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: row;
   }
 
-  .footer {
-    width: 50%;
-    margin: 0 auto;
-    position: fixed;
-    text-align: center;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+  .container {
+    max-height: 100vh;
+    overflow: hidden;
   }
-
-  .info {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 1.7%;
-    right: 3%;
-  }
-  
-  @media (max-width: 600px) {
-    .grid {
-      width: 100%;
-      flex-direction: row;
-    }
-    .container {
-      max-height: 100vh;
-      overflow: hidden;
-    }
-  }
-  
+}
