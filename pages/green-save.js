@@ -11,7 +11,7 @@ import Info from '../public/icon.png';
 import Beleg from '../public/beleg.png';
 import Garchig from '../public/save_tree.png';
 import Image from 'next/image';
-import ReactPlayer from 'react-player/youtube'
+import PlayerComponent from './components/Player'
 
 function getUsername(state) {
   return state.username != undefined && state.username != null && state.username.length > 0 ? state.username : state.isdn;
@@ -163,7 +163,6 @@ class App extends React.Component {
             <LottieControl width="400px" height="400px" animationData={loadingLottie} />
             <div className={styles.rewardicon}>
               {this.state.isLoading === false ? this.getReward(this.state.bigReward, this.state.isdn, this.state.userid, this.state.rewardId, this.state.rewardDto, this.addRewardIdAndRewardDto) : ""}
-              <ReactPlayer className={styles.player} playing={true} url='https://www.youtube.com/watch?v=56MtbKe8xRA?autoplay=1' />
             </div>
           </div>
         </div>
