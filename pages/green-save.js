@@ -11,7 +11,6 @@ import Info from '../public/icon.png';
 import Beleg from '../public/beleg.png';
 import Garchig from '../public/save_tree.png';
 import Image from 'next/image';
-import PlayerComponent from './components/Player'
 
 function getUsername(state) {
   return state.username != undefined && state.username != null && state.username.length > 0 ? state.username : state.isdn;
