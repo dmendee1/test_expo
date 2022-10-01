@@ -152,7 +152,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        <h3 className={styles.headerclass}><i className={styles.name}>Тавтай морил: {getUsername(this.state)}</i> <span className={styles.info}><Modal icon={Info} open={true} description={config.newyear.instruction_green} action="instruction" name="Ногоон зээл" buttonText="Хаах" width="50%" height="50%" /></span></h3>
+        <h3 className={styles.headerclass}><i className={styles.name}>Тавтай морил: {getUsername(this.state)}</i> <span className={styles.info}><Modal icon={Info} open={true} description={config.newyear.instruction_green} introlink="https://team-y.vercel.app/home-mobile-app" action="instruction" name="Ногоон зээл" buttonText="Хаах" width="50%" height="50%" /></span></h3>
         {/* <Image src={Garchig} width="200%" height="100%" /> */}
         <div className={styles.main}>
           <div className={styles.maindev}>
